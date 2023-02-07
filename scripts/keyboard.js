@@ -2,5 +2,5 @@
 let keys = document.getElementById('msg');
 document.getElementById('text').addEventListener('keydown', function(e){
    keys.classList.remove('hidden');
-   keys.innerText = `${keys.innerText} ${e.key}`;
+   keys.innerText = `${keys.innerText}${e.key}`;
 });
