@@ -17,3 +17,37 @@
 pre{
      width: fit-content;
 }
+
+
+#bubbling{
+     width: fit-content;
+     border: 2px solid black;
+}
+
+.cyan{
+     background-color: cyan;
+}
+
+
+.box{
+     border: 2px solid grey;
+     padding: 30px;
+     width: fit-content;
+}
+
+#box1{
+     background-color: yellow;
+}
+#box2{
+     background-color: aquamarine;
+}
+#box3{
+     background-color: coral;
+}
+
+.eventoutput{
+     border: 2px solid red;
+     width: 50px;
+     height: 20px;
+     color: black;
+}

@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning user events</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    Hello world! I am learning User Events in javascript.<br><br>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    Hello world! I am learning User Events in javascript.<br /><br />
     <button id="change-color">Click</button>
-    <button id="dbl-click">Double Click</button> 
+    <button id="dbl-click">Double Click</button>
     <button id="focus-msg">Focus</button>
-    <p id="output"></p><br>
+    <p id="output"></p>
+    <br />
     <pre>
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Culpa aliquam repellendus consequatur, ex maxime in quas
     eos et error ea minima fugiat, earum adipisci nesciunt 
-    laborum deleniti perspiciatis molestiae ratione.</pre><br><br>
+    laborum deleniti perspiciatis molestiae ratione.</pre
+    >
+    <br /><br />
     <label for="text">Write something here.</label>
-    <input type="text" id="text"/>
-    <div class="hidden" id="msg">You typed: </div><br>
+    <input type="text" id="text" />
+    <div class="hidden" id="msg">You typed:</div>
+    <br />
     <div id="form">
-        <form id="name">
-            <label for="first">Your first name: </label>
-            <input type="text" id="first"/><br>
-            <label for="last">Your last name: </label>
-            <input type="text" id="last"/><br>
-            <button type="submit" id="submit">Submit</button>
-            <p id="message"></p>
-        </form>
+      <form id="name">
+        <label for="first">Your first name: </label>
+        <input type="text" id="first" /><br />
+        <label for="last">Your last name: </label>
+        <input type="text" id="last" /><br />
+        <button type="submit" id="submit">Submit</button>
+        <p id="message"></p>
+      </form>
     </div>
-
-</body>
-<script src="/scripts/chng-bg-clr.js"></script>
-<script src="/scripts/focus_blur_event.js"></script>
-<script src="/scripts/dblclick.js"></script>
-<script src="/scripts/mouseover_out.js"></script>
-<script src="/scripts/keyboard.js"></script>
-<script src="/scripts/preventDefault.js"></script>
+    <div id="bubbling">
+      This is an example of event bubbling.<button id="bubbling-btn">
+        Click me!
+      </button>
+    </div>
+    <br /><br />
+    <hr>
+    <p>This is another example of event bubbling.<br> Click on any of the boxes below to understand the effect of event bubbling.</p>
+    <div id="bubbling2">
+      <div id="box3" class="box">
+        <div class="box" id="box2">
+          <button id="box1" class="box">Box1</button>
+          Box2
+        </div>Box3
+        
+      </div>
+    </div>
+    <p id="eventoutput"></p>
+  </body>
+  <script src="/scripts/chng-bg-clr.js"></script>
+  <script src="/scripts/focus_blur_event.js"></script>
+  <script src="/scripts/dblclick.js"></script>
+  <script src="/scripts/mouseover_out.js"></script>
+  <script src="/scripts/keyboard.js"></script>
+  <script src="/scripts/preventDefault.js"></script>
+  <script src="/scripts/eventBubbling.js"></script>
 </html>
