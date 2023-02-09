@@ -20,7 +20,17 @@
     laborum deleniti perspiciatis molestiae ratione.</pre><br><br>
     <label for="text">Write something here.</label>
     <input type="text" id="text"/>
-    <div class="hidden" id="msg">You typed: </div>
+    <div class="hidden" id="msg">You typed: </div><br>
+    <div id="form">
+        <form id="name">
+            <label for="first">Your first name: </label>
+            <input type="text" id="first"/><br>
+            <label for="last">Your last name: </label>
+            <input type="text" id="last"/><br>
+            <button type="submit" id="submit">Submit</button>
+            <p id="message"></p>
+        </form>
+    </div>
 
 </body>
 <script src="/scripts/chng-bg-clr.js"></script>
@@ -28,4 +38,5 @@
 <script src="/scripts/dblclick.js"></script>
 <script src="/scripts/mouseover_out.js"></script>
 <script src="/scripts/keyboard.js"></script>
+<script src="/scripts/preventDefault.js"></script>
 </html>

@@ -12,7 +12,7 @@ btn.addEventListener('focus', focusHandler);
 // creating event handler for blur(focus out)
 function blurHandler(){
     msg.innerText = '';
-    btn.removeEventListener('focus', focusHandler);
+    // btn.removeEventListener('focus', focusHandler);
 }
 
 // registering the event blur

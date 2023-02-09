@@ -8,3 +8,12 @@
 .hidden{
      visibility: hidden;
 }
+
+.yellow{
+     background-color: yellow;
+}
+
+
+pre{
+     width: fit-content;
+}
